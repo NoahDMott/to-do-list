@@ -1,12 +1,63 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Josefin Sans', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: gray;
+  }
+  .App{
+    background-color: aliceblue;
+    width: 600px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  code {
+    font-family: 'Josefin Sans', cursive;
+  }
+  
+  .todo {
+    cursor: pointer;
+  }
+  .strike {
+    text-decoration: line-through;
+  }
+  h1{
+    text-decoration: underline;
+  }
+  button {
+    background-color: #1c87c9;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+button, body {
+    animation: glowing 1700ms infinite;
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+  
